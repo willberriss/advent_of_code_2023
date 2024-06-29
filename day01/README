@@ -1,0 +1,19 @@
+Python
+
+# How to run script
+
+will@zen day01 % ./day01_part01.py input.txt
+We've been called directly, not imported.
+datafile: input.txt
+Opening file: input.txt
+digit_generator is now empty
+sum: 54990
+Answer = 54990
+will@zen day01 % 
+
+
+Note: Ensure python script has executable permission. If not then run as:
+
+will@zen day01 % python3 day01_part01.py input.txt
+
+
