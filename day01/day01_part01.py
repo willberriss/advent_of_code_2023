@@ -2,6 +2,7 @@
 
 import sys
 import re
+from pathlib import Path
 
 def day01_part01(datafile):
     sum = 0
@@ -13,11 +14,12 @@ def day01_part01(datafile):
     return sum
    
 def num_generator(datafile):
-    print("Opening file: %s" % datafile)
-    f = open(datafile, 'r')
+
+    datafilepath = Path(__file__).parent/datafile
+    print("Opening file: %s" % datafilepath)
     
     sum = 0.0
-    for row in open(datafile, 'r'):
+    for row in open(datafilepath, 'r'):
         # print(f"row: {row}")
         num = get_num(row)
         yield num

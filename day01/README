@@ -1,4 +1,10 @@
-Python
+# Note: Use the following Python venv
+
+will@zen advent_of_code_2023 % pwd
+/Users/will/zen_linux/dev/repos_github_mine/advent_of_code_2023
+
+source ./aoc2023venv/bin/activate
+
 
 # How to run script
 
@@ -9,11 +15,38 @@ Opening file: input.txt
 digit_generator is now empty
 sum: 54990
 Answer = 54990
+
 will@zen day01 % 
 
 
 Note: Ensure python script has executable permission. If not then run as:
 
 will@zen day01 % python3 day01_part01.py input.txt
+
+
+# How to run unittests
+
+(aoc2023venv) will@zen day01 % pytest test_day01_part01.py
+
+============================= test session starts =============================
+platform darwin -- Python 3.10.7, pytest-8.2.2, pluggy-1.5.0
+rootdir: /Volumes/zen-linux/dev/repos_github_mine/advent_of_code_2023/day01
+collected 1 item                                                              
+
+test_day01_part01.py .                                                  [100%]
+
+============================== 1 passed in 0.00s ==============================
+(aoc2023venv) will@zen day01 %
+
+
+Note: Use 'pytest -s test_day01_part01.py' to see print statements and to see
+pin-pointed line of failure when a test fails.
+
+Example output:
+
+        for p in mypairs:
+>           assert p[0] == p[1]
+E           assert 388 == 38
+
 
 
