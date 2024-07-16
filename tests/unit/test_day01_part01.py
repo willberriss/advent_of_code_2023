@@ -1,7 +1,5 @@
-#import pytest
-
-from day01_part01 import day01_part01
-from day01_part01 import num_generator
+from day01.day01_part01 import day01_part01
+from day01.day01_part01 import num_generator
 
 # Use the sample data on the AoC question as test data:
 
